@@ -111,7 +111,7 @@ export default function MedicationInsights() {
     setIsLoading(true)
 
     try {
-      const response = await fetch('https://r1bgmn.buildship.run/medicationInsight', {
+      const response = await fetch('<buildship-url>', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

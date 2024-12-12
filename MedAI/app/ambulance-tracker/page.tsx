@@ -59,7 +59,7 @@ export default function AmbulanceTracker() {
   return (
     <div className="w-full h-screen">
       <Map
-        mapboxAccessToken="pk.eyJ1IjoiaGFyaXNoamFydGFyZ2hhciIsImEiOiJjbTRrYW55NGswbmR2MnZzZnR0MGVnOXA0In0.TTGO72Bpt2cESlW0S2mSug"
+        mapboxAccessToken="<token>"
         initialViewState={{
           longitude: (AMBULANCE_START[0] + PATIENT_LOCATION[0]) / 2,
           latitude: (AMBULANCE_START[1] + PATIENT_LOCATION[1]) / 2,

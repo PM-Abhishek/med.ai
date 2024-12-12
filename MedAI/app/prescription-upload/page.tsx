@@ -8,7 +8,7 @@ import { Spinner } from '@/components/ui/spinner'
 import { Camera } from 'lucide-react'
 import Image from 'next/image'
 
-const DROPBOX_ACCESS_TOKEN = 'sl.u.AFYpx4XJ8Dzdn4M_DBdV1YxGbGxdMVnHyv7K0jlr2F6IHPxVu-YNfwjHpg_5BC5iBkumlHL7ZG6tEPx6th6EY6lSbM9gu9MgNxCZAgwY0L1jrkdfzqjjX363_aTgyqDZMhDVNfplHoJVsi7Hri2z9r7ih6KmFWtRFS2psTGZzuLsCbRURNwYDQPjFupKj1Mw0OeAfe1Em_eMlGjWRc6XlHxQ8L2vfwk_-1VFAimH9o5d4BT43AGNFin2oMVKiCz1FAZDQ5ofcbjoDnNIMksmYrhKZvHvWKdwMZrz3j7PByLszLET5wsHHbq8HbT5HCo1J_uzRi21MO0kRhoaKNha9BSetPe7WSchUk8EASdNpYSDd8n4JOQ4UQ_rEZ7vUIWgPOvG3YV8CpcrETuNUjfKroOW8lt1VYDpB-JHt2HZ9n2fxKaO3L-f-lOsxQxqu9xKnVXxMZRlb4ufXAISlj5d9yOVEifRQ7Pfdk70HYTRXE8iYsEoalZWHKLr74yMEwQuNzYjE90CGjeCILSD5p7c1rE9xEJSKUCChMnsB8IArJD13OUg5GkA9QRZ6-DjFSn_rC7ZAPBSvhduWPuYyAtb7tOXieT1xJ5K3k4t2rDUuItzJU2QxypsLoDrhNhXHH9cWoqbIh33jxYBfxiTo1CxIjrAt549GyyyD9BbDdtsXS3Awfsa6ITw0S34Sr6eznr0Md58e9opqHc6sCmbUhX5Pyb5BNQPlkvG8w1yCS_kZlEKr6uXOFj09hg1Jxo7Y7rFiPU2y9MolFK3JbK7gYnMdM_cO_HUzA9PEiZdmbuyv_vIpeRaDwcL7mqiGJZZQJ_gNysgSHhuc7K2G_kx1npRBWuUIrGuw-2UyDj3jD2--KzmRU0ok3Onan-TdeCPx1Sr2gNWAX3HsdNd0PvzwRx58wEYDGejAVhMFmTil7cHhCJ83nKS1VoFWGA4mHd8ym_xH4gojmpXoasPMIV4SvhDyXfO2OGw--gE7xm0eOIiJUAh-k8wDA9ACoajXQxIr2ZphOZWqrF6f6zBlbnKdUJqcoPt7qw-InLyKbvFAYRUflK1ed-EbOyRxaiXP8pFvFEzZEnhhGXqJJWXxfAddeBsacEj3zNY5rHBrUXyg4yln-jIKb8zLbzj_Wz_whH7j2MEoCa47nW7gZA6Dfn3CRfQI52q9AK3P5fh1o9fJU5ieiYiolSOtKwmWn4Edfa41Sd3MrPMsmaN8mJUlf_oYvZFQWVfZSOCdZbi8WG0lVKoVjiLfTPxmG7RmosVvNKpV0xq8sLB7Q389EUHY4L85Et_woqsR2dQVXKRguTA5Bc_SlUxHcUohXCTgEPgoFcChFtX2-uFJrHke9HbDOqYDqT1bd5KXQIahUGXe11A1lEclGLWT-i_LUaegPBeGbSDfH68WRQBZMb05xG9hPJBVmKPezStcFO1aCSMlNiRvCrgj-kFsA'
+const DROPBOX_ACCESS_TOKEN = "<token>"
 
 interface MedicineInfo {
   medicine_name: string;
@@ -52,7 +52,7 @@ export default function PrescriptionUpload() {
 
       const imageUrl = sharedLinkResponse.result.url.replace('www.dropbox.com', 'dl.dropboxusercontent.com')
 
-      const apiResponse = await fetch('https://istrdp.buildship.run/prescription-upload', {
+      const apiResponse = await fetch('<buildship-url>', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
